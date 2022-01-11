@@ -44,7 +44,7 @@ header {
 
 	flex-direction: row;
 	align-content: center;
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
 }
 
 .mainHeader>button {
