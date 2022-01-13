@@ -1,13 +1,18 @@
-const godsButton = document.getElementById('godsButton');
-const racesButton = document.getElementById('racesButton');
+const changeBtn = document.getElementById('bodyChange');
+
+var back = 1
 
 window.onload = () => {
 
-	godsButton.onclick = e => {
-		console.log("GODS", e)
-	}
+	changeBtn.onclick = function(e) {
+		console.log(e)
+		
+		textZone = document.getElementById("textzone")
 
-	racesButton.onclick = e => {
-		console.log("RACES", e)
+		p = document.createElement("p")
+		p.innerText = back ? 'yes' : 'no'
+		back = back ? 0 : 1
+		textZone.innerHTML = ""
+		textZone.appendChild(p)
 	}
 }
